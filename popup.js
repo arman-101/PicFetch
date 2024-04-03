@@ -38,6 +38,11 @@ function displayImages(images) {
     const imageSize = document.createElement("span");
     imageSize.textContent = `${image.width}x${image.height}` || "Image Size";
 
+    // Add event listener to send message to background script when image is clicked
+    listItem.addEventListener("click", function() {
+      chrome.runtime.sendMessage({ action: "downloadImage", imageUrl: image.src, imageName: image.name });
+    });
+
     listItem.appendChild(imageThumbnail);
     listItem.appendChild(imageName);
     listItem.appendChild(imageSize);
