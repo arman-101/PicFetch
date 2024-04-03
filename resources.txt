@@ -1,0 +1,8 @@
+Languages used - HTML, CSS, JS
+Font - Inter
+IDE - VS Code
+
+Images:
+Extension Icon - https://www.flaticon.com/free-icon/photo_3792702
+Not Found Icon - https://www.flaticon.com/free-icon/not-found_2748441?term=not+found&page=1&position=5&origin=search&related_id=2748441
+
