@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PicFetch</title>
+  <style>
+    /* Import Inter font */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+    }
+
+    /* Embedded Google Fonts CSS */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+    /* Apply Inter font to body */
+    body {
+      font-family: 'Inter', sans-serif;
+      width: 300px;
+    }
+
+    /* Your existing CSS styles */
+    #images-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .image-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+      border: 2px solid #FE6C5F;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    .image-thumbnail {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border: 1px solid #FE6C5F;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .image-name {
+      color: #000;
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    /* Bold title with stroke */
+    h2 {
+      text-align: center;
+      color: #FE6C5F;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 700; /* Bold */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #image-count {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>PicFetch<span id="image-count"></span></h2>
+  <ul id="images-list"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
